@@ -1,0 +1,17 @@
+Step1: Create new Angular Project lets say the project name is AngularAssignment
+execute this command on terminal:
+>: ng new AngularAssignment
+
+Step2:
+For creating a component type the following command
+>: ng g c componentName
+I have created a component named fruits
+>: ng g c fruits
+
+Step 3:Implement all angular data binding i.e, String interpolation,Property Binding,Event Binding and Two-Way Data Binding
+and directive ngFor,ngIf in fruits.component.ts and fruits.component.html
+
+Step 4:After implementing run the project using the following command
+>: ng serve -o
+
+The output will be displayed on a browser

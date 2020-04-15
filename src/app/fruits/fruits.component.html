@@ -1,0 +1,51 @@
+
+<h1>{{interpolation}}</h1>
+<hr>
+<h4>Property Binding</h4>
+<h3>Event Binding Example</h3>
+<img [style.width.px]='imageWidth' src="C://Users//Abhinav//Downloads//test.jpg"/>
+<hr>
+<h1>{{title}}</h1>
+<button (click)='ChangeName()'>Change</button><br>
+<hr>
+<h4>Two Way Data Binding Example</h4>
+<h2>Type in the box to change the text</h2>
+<input style="width: 50%" type="text" [(ngModel)]='listFilter'/>
+<h2>{{listFilter}}</h2>
+<hr>
+<h3>ngFor and ngIf <Example></Example></h3>
+<h4>Click on the button to add Fruits</h4>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let fruit of fruits">
+          {{ fruit }}
+        </li>
+
+        <li class="list-group-item">
+          <button class="btn btn-info" (click)="Addmore()">
+            Add More
+          </button>
+        </li>
+
+        <li class="list-group-item">
+          {{ inputFruit }}
+        </li>
+
+        <li class="list-group-item" *ngIf="Adding">
+          <input type="text" [(ngModel)]="inputFruit" />
+          <br /><br />
+          <button
+            (click)="addFruit()"
+            class="btn btn-danger"
+            [disabled]="!inputFruit" >
+            Add Player
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

@@ -88,9 +88,12 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           }
         },
         "lint": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularAssignmentOne"
+    }
+  },
+  "defaultProject": "AngularAssignmentOne",
+  "cli": {
+    "analytics": "feab1159-0304-444a-9587-f9b3c61a5bf0"
+  }
 }
